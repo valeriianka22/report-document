@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Звіти з лабораторних робіт</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h1, h2, p {
+            text-align: center;
+            margin: 0;
+            padding: 10px;
+        }
+        h1 {
+            margin-bottom: 15px; 
+        }
+        p {
+            margin-bottom: 20px; 
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .sidebar {
+            width: 25%;
+            border-right: 1px solid #ccc;
+            padding: 20px;
+        }
+        .main-content {
+            width: 75%;
+            padding: 20px;
+        }
+        .sidebar button {
+            display: block;
+            padding: 10px;
+            background-color: #f2f2f2;
+            border: 1px solid #ccc;
+            text-align: center;
+            margin-bottom: 5px;
+            color: black;
+            cursor: pointer;
+        }
+        .sidebar button:hover {
+            background-color: #ddd;
+        }
+        .output {
+            border: 1px solid #ccc;
+            padding: 20px;
+            height: 200px;
+            background-color: #f9f9f9;
+        }
+        .top-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .top-buttons a {
+            display: inline-block;
+            width: calc(25% - 10px); /* Чотири кнопки в ряд */
+            padding: 10px;
+            margin: 5px;
+            background-color: #f2f2f2;
+            text-align: center;
+            text-decoration: none;
+            color: black;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        .top-buttons a:hover {
+            background-color: #ddd;
+        }
+        .photo {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            width: 110px;
+            height: 160px;
+            border: 1px solid #ccc;
+        }
+        .header-container {
+            position: relative;
+            margin-bottom: 20px;
+        }
+    </style>
+    <script>
+        // Функція для показу контенту
+        function showContent(content) {
+            document.getElementById('output').innerHTML = content;
+        }
+    </script>
+</head>
+<body>
+    <div class="header-container">
+        <h1>ЗВІТИ З ЛАБОРАТОРНИХ РОБІТ</h1>
+        <h2>З ДИСЦИПЛІНИ "ІНТЕРНЕТ-ТЕХНОЛОГІЇ ТА ПРОЕКТУВАННЯ WEB-ЗАСТОСУВАНЬ"</h2>
+        <p>Студентки групи ІС-32 Бондар Марини Михайлівни</p>
+        <img src="image/photo.JPG" alt="Фото студента" class="photo">
+    </div>
+
+    <div class="top-buttons">
+        <a href="lab1.html">Лабораторна робота №1</a>
+        <a href="lab2.html">Лабораторна робота №2</a>
+        <a href="lab3.html">Лабораторна робота №3</a>
+        <a href="lab4.html">Лабораторна робота №4</a>
+        <a href="lab5.html">Лабораторна робота №5</a>
+        <a href="lab6.html">Лабораторна робота №6</a>
+        <a href="lab7.html">Лабораторна робота №7</a>
+        <a href="lab8.html">Лабораторна робота №8</a>
+        <a href="lab9.html">Лабораторна робота №9</a>
+    </div>
+
+    <div class="container">
+        <div class="sidebar">
+            <!-- Кнопки сайдбару для виведення різної інформації -->
+            <button onclick="showContent('Опис предметного середовища: Тут йде детальний опис предметного середовища, яке використовувалося під час лабораторної роботи.')">Опис предметного середовища</button>
+            <button onclick="showContent('Тема Мета Місце розташування ЛР №1: Лабораторна робота №1 спрямована на вивчення основних принципів HTML.')">Тема Мета Місце розташування ЛР №1</button>
+            <button onclick="showContent('Структура документа: В цій лабораторній роботі використовується базова структура HTML-документа, що включає теги <html>, <head>, <body>.')">Структура документа</button>
+            <button onclick="showContent('HTML-код таблиць: Для роботи з таблицями в HTML використовується тег <table>.')">HTML-код таблиць</button>
+            <button onclick="showContent('HTML-код списку: Списки створюються за допомогою тегів <ul> або <ol> для неупорядкованих і упорядкованих списків відповідно.')">HTML-код списку</button>
+            <button onclick="showContent('HTML-код зображення: Для вставки зображення використовується тег')">HTML-код зображення</button>
+            <button onclick="showContent('Висновки: Підсумовуючи, лабораторна робота допомогла краще зрозуміти основні принципи верстки HTML-сторінок.')">Висновки</button>
+        </div>
+
+        <div class="main-content">
+            <!-- Область для виведення інформації -->
+            <div id="output" class="output">
+                Місце виведення інформації
+            </div>
+        </div>
+    </div>
+</body>
+</html>
