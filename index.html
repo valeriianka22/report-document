@@ -4,88 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Звіти з лабораторних робіт</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-        h1, h2, p {
-            text-align: center;
-            margin: 0;
-            padding: 10px;
-        }
-        h1 {
-            margin-bottom: 15px; 
-        }
-        p {
-            margin-bottom: 20px; 
-        }
-        .container {
-            display: flex;
-            justify-content: space-between;
-            padding: 20px;
-        }
-        .sidebar {
-            width: 25%;
-            border-right: 1px solid #ccc;
-            padding: 20px;
-        }
-        .main-content {
-            width: 75%;
-            padding: 20px;
-        }
-        .sidebar button {
-            display: block;
-            padding: 10px;
-            background-color: #f2f2f2;
-            border: 1px solid #ccc;
-            text-align: center;
-            margin-bottom: 5px;
-            color: black;
-            cursor: pointer;
-        }
-        .sidebar button:hover {
-            background-color: #ddd;
-        }
-        .output {
-            border: 1px solid #ccc;
-            padding: 20px;
-            height: 600px;
-            background-color: #f9f9f9;
-        }
-        .top-buttons {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            margin-bottom: 20px;
-        }
-        .top-buttons a {
-            display: inline-block;
-            width: calc(25% - 10px); /* Чотири кнопки в ряд */
-            padding: 10px;
-            margin: 5px;
-            background-color: #f2f2f2;
-            text-align: center;
-            text-decoration: none;
-            color: black;
-            border: 1px solid #ccc;
-            box-sizing: border-box;
-        }
-        .top-buttons a:hover {
-            background-color: #ddd;
-        }
-        .photo {
-            position: absolute;
-            top: 10px;
-            right: 20px;
-            width: 110px;
-            height: 160px;
-            border: 1px solid #ccc;
-        }
-        .header-container {
-            position: relative;
-            margin-bottom: 20px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
     <script>
         // Функція для показу контенту
         function showContent(content) {
@@ -94,44 +13,52 @@
     </script>
 </head>
 <body>
-    <div class="header-container">
-        <h1>ЗВІТИ З ЛАБОРАТОРНИХ РОБІТ</h1>
-        <h2>З ДИСЦИПЛІНИ "ІНТЕРНЕТ-ТЕХНОЛОГІЇ ТА ПРОЕКТУВАННЯ WEB-ЗАСТОСУВАНЬ"</h2>
-        <p>Студентки групи ІС-32 Ковалюк Валерії Юріївни</p>
-        <img src="image/photo.JPG" alt="Фото студента" class="photo">
-    </div>
 
-    <div class="top-buttons">
-        <a href="lab1.html">Лабораторна робота №1</a>
-        <a href="lab2.html">Лабораторна робота №2</a>
-        <a href="lab3.html">Лабораторна робота №3</a>
-        <a href="lab4.html">Лабораторна робота №4</a>
-        <a href="lab5.html">Лабораторна робота №5</a>
-        <a href="lab6.html">Лабораторна робота №6</a>
-        <a href="lab7.html">Лабораторна робота №7</a>
-        <a href="lab8.html">Лабораторна робота №8</a>
-        <a href="lab9.html">Лабораторна робота №9</a>
-    </div>
-
-    <div class="container">
-        <div class="sidebar">
-            <!-- Кнопки сайдбару для виведення різної інформації -->
-            <button onclick="showContent('Опис предметного середовища: Вебсайт танцювальної студії буде включати головну сторінку з коротким описом студії, сторінку розкладу занять, форму реєстрації до певного тренера, інформацію про викладачів, новини, блог, галерею з фото та відео, відгуки клієнтів та контакти з картою і формою зворотного зв\'язку. Він надаватиме користувачам можливість дізнатися про студію, записатися на заняття та бути в курсі останніх новин і подій.')">Опис предметного середовища</button>
-            <button onclick="showContent('Тема Мета Місце розташування ЛР №1: <br> Тема: СТРУКТУРА HTML-ДОКУМЕНТА. ВИБІР ПРЕДМЕТНОЇ ГАЛУЗІ. РОБОТА З ПОСИЛАННЯМИ, ТАБЛИЦЯМИ, ЗОБРАЖЕННЯМИ, СПИСКАМИ в HTML-ДОКУМЕНТІ. <br> Мета: придбати практичні навички роботи  з HTML-документом, таблицями, , зображеннями, посиланнями, списками, формами. Створити шаблон звітного HTML-документом для відображення результатів роботи всіх лабораторних робіт.')">Тема Мета Місце розташування ЛР №1</button>
-            <button onclick="showContent('Структура документа: В цій лабораторній роботі використовується базова структура HTML-документа, що включає певні теги.')">Структура документа</button>
-            <button onclick="showContent('HTML-код таблиць: <img src=&quot;image/таблиця1.png&quot; alt=&quot;Приклад зображення&quot; style=&quot;width: 40%;&quot;> <img src=&quot;image/таблиця2.png&quot; alt=&quot;Приклад зображення&quot; style=&quot;width: 40%;&quot;>')">HTML-код таблиць</button>
-            <button onclick="showContent('HTML-код списку: <img src=&quot;image/список1.png&quot; alt=&quot;Приклад зображення&quot; style=&quot;width: 40%;&quot;> <img src=&quot;image/список2.png&quot; alt=&quot;Приклад зображення&quot; style=&quot;width: 40%;&quot;>')">HTML-код списку</button>
-            <button onclick="showContent('HTML-код форми: <img src=&quot;image/форма1.png&quot; alt=&quot;Приклад зображення&quot; style=&quot;width: 40%;&quot;> <img src=&quot;image/форма2.png&quot; alt=&quot;Приклад зображення&quot; style=&quot;width: 40%;&quot;>')">HTML-код форми</button>
-            <button onclick="showContent('HTML-код зображення: <img src=&quot;image/фото1.png&quot; alt=&quot;Приклад зображення&quot; style=&quot;width: 60%;&quot;> <img src=&quot;image/фото2.png&quot; alt=&quot;Приклад зображення&quot; style=&quot;width: 60%;&quot;>')">HTML-код зображення</button>
-            <button onclick="showContent('Висновки: Підсумовуючи, лабораторна робота допомогла краще зрозуміти основні принципи верстки HTML-сторінок.')">Висновки</button>
+    <header>
+        <div class="header-container">
+            <h1>ЗВІТИ З ЛАБОРАТОРНИХ РОБІТ</h1>
+            <h2>З ДИСЦИПЛІНИ "ІНТЕРНЕТ-ТЕХНОЛОГІЇ ТА ПРОЕКТУВАННЯ WEB-ЗАСТОСУВАНЬ"</h2>
+            <p>Студентки групи ІС-32 Ковалюк Валерії Юріївни</p>
+            <img src="image/photo.JPG" alt="Фото студента" class="photo">
         </div>
+    </header>
 
-        <div class="main-content">
-            <!-- Область для виведення інформації -->
-            <div id="output" class="output">
-                Місце виведення інформації
+    <main>
+        <div class="top-buttons">
+            <a href="index.html">Лабораторна робота №1</a>
+            <a href="lab2.html">Лабораторна робота №2</a>
+            <a href="lab3.html">Лабораторна робота №3</a>
+            <a href="lab4.html">Лабораторна робота №4</a>
+            <a href="lab5.html">Лабораторна робота №5</a>
+            <a href="lab6.html">Лабораторна робота №6</a>
+            <a href="lab7.html">Лабораторна робота №7</a>
+            <a href="lab8.html">Лабораторна робота №8</a>
+            <a href="lab9.html">Лабораторна робота №9</a>
+        </div>
+    
+        <div class="container">
+            <div class="sidebar">
+                <!-- Кнопки сайдбару для виведення різної інформації -->
+                <button onclick="showContent('<strong>Опис бізнес-логіки середовища:</strong> <br> Вебсайт танцювальної студії буде включати головну сторінку з коротким описом студії, сторінку розкладу занять, форму реєстрації до певного тренера, інформацію про викладачів, новини, блог, галерею з фото та відео, відгуки клієнтів та контакти з картою і формою зворотного зв\'язку. Він надаватиме користувачам можливість дізнатися про студію, записатися на заняття та бути в курсі останніх новин і подій. <br> <br> <strong>Сценарій:</strong> <br> Пропоную переглянути його на окремій html сторінці <a href=&quot;busines-logic.html&quot;>ось тут</a>.')">Опис предметного середовища</button>
+                <button onclick="showContent('<strong>Тема:</strong> <br> СТРУКТУРА HTML-ДОКУМЕНТА. ВИБІР ПРЕДМЕТНОЇ ГАЛУЗІ. РОБОТА З ПОСИЛАННЯМИ, ТАБЛИЦЯМИ, ЗОБРАЖЕННЯМИ, СПИСКАМИ в HTML-ДОКУМЕНТІ. <br><br> <strong>Мета:</strong> <br> придбати практичні навички роботи  з HTML-документом, таблицями, , зображеннями, посиланнями, списками, формами. Створити шаблон звітного HTML-документом для відображення результатів роботи всіх лабораторних робіт. <br><br> <strong>Місце розташування:</strong> <a href=&quot;https://github.com/valeriianka22/IS-32_DanceStudio_Kovaliuk&quot;>ось тут</a>')">Тема Мета Місце розташування ЛР №1</button>
+                <button onclick="showContent('<strong>Структура документа:</strong> <br> <img src=&quot;image/стр1.png&quot; alt=&quot;Приклад зображення&quot; style=&quot;width: 40%;&quot;> <img src=&quot;image/стр2.png&quot; alt=&quot;Приклад зображення&quot; style=&quot;width: 40%;&quot;> <img src=&quot;image/стр3.png&quot; alt=&quot;Приклад зображення&quot; style=&quot;width: 40%;&quot;>')">Структура документа</button>
+                <button onclick="showContent('<strong>HTML-код таблиць:</strong> <br> <img src=&quot;image/таблиця1.png&quot; alt=&quot;Приклад зображення&quot; style=&quot;width: 40%;&quot;> <img src=&quot;image/таблиця2.png&quot; alt=&quot;Приклад зображення&quot; style=&quot;width: 40%;&quot;>')">HTML-код таблиць</button>
+                <button onclick="showContent('<strong>HTML-код списку:</strong> <br> <img src=&quot;image/список1.png&quot; alt=&quot;Приклад зображення&quot; style=&quot;width: 40%;&quot;> <img src=&quot;image/список2.png&quot; alt=&quot;Приклад зображення&quot; style=&quot;width: 40%;&quot;>')">HTML-код списку</button>
+                <button onclick="showContent('<strong>HTML-код форми:</strong> <br> <img src=&quot;image/форма1.png&quot; alt=&quot;Приклад зображення&quot; style=&quot;width: 40%;&quot;> <img src=&quot;image/форма2.png&quot; alt=&quot;Приклад зображення&quot; style=&quot;width: 40%;&quot;>')">HTML-код форми</button>
+                <button onclick="showContent('<strong>HTML-код зображення:</strong> <br> <img src=&quot;image/фото1.png&quot; alt=&quot;Приклад зображення&quot; style=&quot;width: 60%;&quot;> <img src=&quot;image/фото2.png&quot; alt=&quot;Приклад зображення&quot; style=&quot;width: 60%;&quot;>')">HTML-код зображення</button>
+                <button onclick="showContent('<strong>Висновки:</strong> <br> Підсумовуючи, лабораторна робота допомогла краще зрозуміти основні принципи верстки HTML-сторінок.')">Висновки</button>
+            </div>
+    
+            <div class="main-content">
+                <!-- Область для виведення інформації -->
+                <div id="output" class="output">
+                    Місце виведення інформації
+                </div>
             </div>
         </div>
-    </div>
+    </main>
+    
+    <footer></footer>
+
 </body>
 </html>

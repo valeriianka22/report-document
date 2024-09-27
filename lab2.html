@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Звіти з лабораторних робіт</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        // Функція для показу контенту
+        function showContent(content) {
+            document.getElementById('output').innerHTML = content;
+        }
+    </script>
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <h1>ЗВІТИ З ЛАБОРАТОРНИХ РОБІТ</h1>
+            <h2>З ДИСЦИПЛІНИ "ІНТЕРНЕТ-ТЕХНОЛОГІЇ ТА ПРОЕКТУВАННЯ WEB-ЗАСТОСУВАНЬ"</h2>
+            <p>Студентки групи ІС-32 Ковалюк Валерії Юріївни</p>
+            <img src="image/photo.JPG" alt="Фото студента" class="photo">
+        </div>
+    </header>
+
+    <main>
+        <div class="top-buttons">
+            <a href="index.html">Лабораторна робота №1</a>
+            <a href="lab2.html">Лабораторна робота №2</a>
+            <a href="lab3.html">Лабораторна робота №3</a>
+            <a href="lab4.html">Лабораторна робота №4</a>
+            <a href="lab5.html">Лабораторна робота №5</a>
+            <a href="lab6.html">Лабораторна робота №6</a>
+            <a href="lab7.html">Лабораторна робота №7</a>
+            <a href="lab8.html">Лабораторна робота №8</a>
+            <a href="lab9.html">Лабораторна робота №9</a>
+        </div>
+    
+        <div class="container">
+            <div class="sidebar">
+                <!-- Кнопки сайдбару для виведення різної інформації -->
+                <button onclick="showContent('<strong>Тема:</strong> <br> КАСКАДНІ ТАБЛИЦІ СТИЛІВ. СЕЛЕКТОРИ .ІДЕНТИФІКАТОРИ. СТИЛЬОВЕ ОФОРМЛЕННЯ ТЕКСТОВИХ ЕЛЕМЕНТІВ В HTML-ДОКУМЕНТАХ. <br><br> <strong>Мета:</strong> <br> придбати практичні навички роботи  з селекторами, ідентифікаторами, списками,  різноманітними властивостями кольору і фону,  зовнішними та внутрішними  відступами,  плаваючими елементами, оформленням текстових елементів. <br><br> <strong>Місце розташування:</strong> <a href=&quot;https://github.com/valeriianka22/IS-32_DanceStudio_Kovaliuk&quot;>ось тут</a>')">Тема Мета Місце розташування ЛР №2</button>
+                <button onclick="showContent('<strong>Опис бізнес-логіки середовища:</strong> <br> Вебсайт танцювальної студії буде включати головну сторінку з коротким описом студії, сторінку розкладу занять, форму реєстрації до певного тренера, інформацію про викладачів, новини, блог, галерею з фото та відео, відгуки клієнтів та контакти з картою і формою зворотного зв\'язку. Він надаватиме користувачам можливість дізнатися про студію, записатися на заняття та бути в курсі останніх новин і подій. <br> <br> <strong>Сценарій:</strong> <br> Пропоную переглянути його на окремій html сторінці <a href=&quot;busines-logic.html&quot;>ось тут</a>.')">Способи пілючення стилів</button>
+                <button onclick="showContent('<strong>Селектори:</strong> <br> <img src=&quot;image/стр1.png&quot; alt=&quot;Приклад зображення&quot; style=&quot;width: 40%;&quot;> <img src=&quot;image/стр2.png&quot; alt=&quot;Приклад зображення&quot; style=&quot;width: 40%;&quot;> <img src=&quot;image/стр3.png&quot; alt=&quot;Приклад зображення&quot; style=&quot;width: 40%;&quot;>')">Селектори</button>
+                <button onclick="showContent('<strong>Селектори тегу:</strong> <br> <img src=&quot;image/таблиця1.png&quot; alt=&quot;Приклад зображення&quot; style=&quot;width: 40%;&quot;> <img src=&quot;image/таблиця2.png&quot; alt=&quot;Приклад зображення&quot; style=&quot;width: 40%;&quot;>')">Селектори тегу</button>
+                <button onclick="showContent('<strong>Селектори класу:</strong> <br> <img src=&quot;image/список1.png&quot; alt=&quot;Приклад зображення&quot; style=&quot;width: 40%;&quot;> <img src=&quot;image/список2.png&quot; alt=&quot;Приклад зображення&quot; style=&quot;width: 40%;&quot;>')">Селектори класу</button>
+                <button onclick="showContent('<strong>Селектори ідентифікаторів:</strong> <br> <img src=&quot;image/форма1.png&quot; alt=&quot;Приклад зображення&quot; style=&quot;width: 40%;&quot;> <img src=&quot;image/форма2.png&quot; alt=&quot;Приклад зображення&quot; style=&quot;width: 40%;&quot;>')">Селектори ідентифікаторів</button>
+                <button onclick="showContent('<strong>Інші селектори:</strong> <br> <img src=&quot;image/фото1.png&quot; alt=&quot;Приклад зображення&quot; style=&quot;width: 60%;&quot;> <img src=&quot;image/фото2.png&quot; alt=&quot;Приклад зображення&quot; style=&quot;width: 60%;&quot;>')">Інші селектори</button>
+                <button onclick="showContent('<strong>CSS: Шрифти Текст Таблиці Фон Контур Списки CSS Просунутий:</strong> <br> <img src=&quot;image/фото1.png&quot; alt=&quot;Приклад зображення&quot; style=&quot;width: 60%;&quot;> <img src=&quot;image/фото2.png&quot; alt=&quot;Приклад зображення&quot; style=&quot;width: 60%;&quot;>')">CSS: Шрифти Текст Таблиці Фон Контур Списки CSS Просунутий</button>
+                <button onclick="showContent('<strong>Висновки:</strong> <br> Підсумовуючи, лабораторна робота допомогла краще зрозуміти основні принципи верстки HTML-сторінок.')">Висновки</button>
+            </div>
+    
+            <div class="main-content">
+                <!-- Область для виведення інформації -->
+                <div id="output" class="output">
+                    Місце виведення інформації
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer></footer>
+
+</body>
+</html>
