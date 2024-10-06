@@ -1,0 +1,47 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Висота сторінки - 100% від висоти вікна */
+}
+
+table {
+    width: 100%;
+    height: 100%; /* Вся висота екрану */
+    border-collapse: separate;
+    border-spacing: 30px 7px; /* Відступи між комірками */
+}
+
+td {
+    border: 1px solid #000;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.header {
+    background-color: #0084ff;
+    height: 10%; /* Висота залежить від розміру екрану */
+    text-align: center;
+    vertical-align: middle;
+}
+
+.footer {
+    background-color: #0084ff;
+    height: 10%; /* Висота залежить від розміру екрану */
+    text-align: center;
+    vertical-align: middle;
+}
+
+.sidebar {
+    width: 15%; /* Ширина залежить від розміру екрану */
+    background-color: #ecf00d;
+    vertical-align: middle;
+    height: 100%; /* Займає всю висоту сторінки */
+}
+
+.content {
+    background-color: #ffffff;
+    height: auto;
+    vertical-align: middle;
+}

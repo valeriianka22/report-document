@@ -1,5 +1,6 @@
 body {
     font-family: Arial, sans-serif;
+    background-color: #ead5fd;
 }
 h1, h2, p {
     text-align: center;
@@ -19,7 +20,7 @@ p {
 }
 .sidebar {
     width: 25%;
-    border-right: 1px solid #ccc;
+    border-right: 1px solid #4c0154;
     padding: 20px;
 }
 .main-content {
@@ -29,21 +30,23 @@ p {
 .sidebar button {
     display: block;
     padding: 10px;
-    background-color: #f2f2f2;
-    border: 1px solid #ccc;
+    background-color: #c6a2e7;
+    border: 2px solid #4c0154;
+    border-radius: 5px;
     text-align: center;
     margin-bottom: 5px;
     color: black;
     cursor: pointer;
 }
 .sidebar button:hover {
-    background-color: #ddd;
+    background-color: #4c0154;
+    color: white;
 }
 .output {
-    border: 1px solid #ccc;
+    border: 1px solid #4c0154;
     padding: 20px;
     min-height: 300px;
-    background-color: #f9f9f9;
+    background-color: #c6a2e7;
     overflow-y: auto;
 }
 .top-buttons {
@@ -54,18 +57,19 @@ p {
 }
 .top-buttons a {
     display: inline-block;
-    width: calc(25% - 10px); /* Чотири кнопки в ряд */
+    width: calc(20% - 10px); /* Чотири кнопки в ряд */
     padding: 10px;
     margin: 5px;
-    background-color: #f2f2f2;
+    background-color: #4c0154;
     text-align: center;
     text-decoration: none;
-    color: black;
-    border: 1px solid #ccc;
+    color: #ffffff;
+    border: 2px solid #000000;
     box-sizing: border-box;
+    border-radius: 15px;
 }
 .top-buttons a:hover {
-    background-color: #ddd;
+    background-color: #6f3775;
 }
 .photo {
     position: absolute;
@@ -78,4 +82,7 @@ p {
 .header-container {
     position: relative;
     margin-bottom: 20px;
+}
+.list-butt {
+    list-style-type: none;
 }

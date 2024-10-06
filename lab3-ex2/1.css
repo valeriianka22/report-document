@@ -1,0 +1,48 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Висота сторінки */
+}
+
+table {
+    width: 100%;
+    height: 100%; /* Вся висота екрану */
+    border-collapse: separate;
+    border-spacing: 30px 7px;
+}
+
+td {
+    border: 1px solid #000;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.header {
+    height: 100px; /* Фіксована висота */
+    background-color: #0084ff;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.footer {
+    height: 100px; /* Фіксована висота */
+    background-color: #0084ff;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.sidebar {
+    width: 200px; /* Фіксована ширина сайдбару */
+    background-color: #ecf00d;
+    vertical-align: middle;
+    height: 100%; /* Займає всю висоту сторінки */
+}
+
+.content {
+    background-color: #ffffff;
+    height: auto;
+    vertical-align: middle;
+}
+

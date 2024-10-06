@@ -6,7 +6,6 @@
     <title>Звіти з лабораторних робіт</title>
     <link rel="stylesheet" href="style.css">
     <script>
-        // Функція для показу контенту
         function showContent(content) {
             document.getElementById('output').innerHTML = content;
         }
@@ -42,10 +41,20 @@
                 <button onclick="showContent('<strong>Опис бізнес-логіки середовища:</strong> <br> Вебсайт танцювальної студії буде включати головну сторінку з коротким описом студії, сторінку розкладу занять, форму реєстрації до певного тренера, інформацію про викладачів, новини, блог, галерею з фото та відео, відгуки клієнтів та контакти з картою і формою зворотного зв\'язку. Він надаватиме користувачам можливість дізнатися про студію, записатися на заняття та бути в курсі останніх новин і подій. <br> <br> <strong>Сценарій:</strong> <br> Пропоную переглянути його на окремій html сторінці <a href=&quot;busines-logic.html&quot;>ось тут</a>.')">Опис предметного середовища</button>
                 <button onclick="showContent('<strong>Тема:</strong> <br> СТРУКТУРА HTML-ДОКУМЕНТА. ВИБІР ПРЕДМЕТНОЇ ГАЛУЗІ. РОБОТА З ПОСИЛАННЯМИ, ТАБЛИЦЯМИ, ЗОБРАЖЕННЯМИ, СПИСКАМИ в HTML-ДОКУМЕНТІ. <br><br> <strong>Мета:</strong> <br> придбати практичні навички роботи  з HTML-документом, таблицями, , зображеннями, посиланнями, списками, формами. Створити шаблон звітного HTML-документом для відображення результатів роботи всіх лабораторних робіт. <br><br> <strong>Місце розташування:</strong> <a href=&quot;https://github.com/valeriianka22/IS-32_DanceStudio_Kovaliuk&quot;>ось тут</a>')">Тема Мета Місце розташування ЛР №1</button>
                 <button onclick="showContent('<strong>Структура документа:</strong> <br> <img src=&quot;image/стр1.png&quot; alt=&quot;Приклад зображення&quot; style=&quot;width: 40%;&quot;> <img src=&quot;image/стр2.png&quot; alt=&quot;Приклад зображення&quot; style=&quot;width: 40%;&quot;> <img src=&quot;image/стр3.png&quot; alt=&quot;Приклад зображення&quot; style=&quot;width: 40%;&quot;>')">Структура документа</button>
-                <button onclick="showContent('<strong>HTML-код таблиць:</strong> <br> <img src=&quot;image/таблиця1.png&quot; alt=&quot;Приклад зображення&quot; style=&quot;width: 40%;&quot;> <img src=&quot;image/таблиця2.png&quot; alt=&quot;Приклад зображення&quot; style=&quot;width: 40%;&quot;>')">HTML-код таблиць</button>
-                <button onclick="showContent('<strong>HTML-код списку:</strong> <br> <img src=&quot;image/список1.png&quot; alt=&quot;Приклад зображення&quot; style=&quot;width: 40%;&quot;> <img src=&quot;image/список2.png&quot; alt=&quot;Приклад зображення&quot; style=&quot;width: 40%;&quot;>')">HTML-код списку</button>
-                <button onclick="showContent('<strong>HTML-код форми:</strong> <br> <img src=&quot;image/форма1.png&quot; alt=&quot;Приклад зображення&quot; style=&quot;width: 40%;&quot;> <img src=&quot;image/форма2.png&quot; alt=&quot;Приклад зображення&quot; style=&quot;width: 40%;&quot;>')">HTML-код форми</button>
-                <button onclick="showContent('<strong>HTML-код зображення:</strong> <br> <img src=&quot;image/фото1.png&quot; alt=&quot;Приклад зображення&quot; style=&quot;width: 60%;&quot;> <img src=&quot;image/фото2.png&quot; alt=&quot;Приклад зображення&quot; style=&quot;width: 60%;&quot;>')">HTML-код зображення</button>
+                <ul class="list-butt">
+                    <li>
+                        <button onclick="showContent('<strong>HTML-код таблиць:</strong> <br> <img src=&quot;image/таблиця1.png&quot; alt=&quot;Приклад зображення&quot; style=&quot;width: 40%;&quot;> <img src=&quot;image/таблиця2.png&quot; alt=&quot;Приклад зображення&quot; style=&quot;width: 40%;&quot;>')">HTML-код таблиць</button>
+                    </li>
+                    <li>
+                        <button onclick="showContent('<strong>HTML-код списку:</strong> <br> <img src=&quot;image/список1.png&quot; alt=&quot;Приклад зображення&quot; style=&quot;width: 40%;&quot;> <img src=&quot;image/список2.png&quot; alt=&quot;Приклад зображення&quot; style=&quot;width: 40%;&quot;>')">HTML-код списку</button>
+                    </li>
+                    <li>
+                        <button onclick="showContent('<strong>HTML-код форми:</strong> <br> <img src=&quot;image/форма1.png&quot; alt=&quot;Приклад зображення&quot; style=&quot;width: 40%;&quot;> <img src=&quot;image/форма2.png&quot; alt=&quot;Приклад зображення&quot; style=&quot;width: 40%;&quot;>')">HTML-код форми</button>
+                    </li>
+                    <li>
+                        <button onclick="showContent('<strong>HTML-код зображення:</strong> <br> <img src=&quot;image/фото1.png&quot; alt=&quot;Приклад зображення&quot; style=&quot;width: 60%;&quot;> <img src=&quot;image/фото2.png&quot; alt=&quot;Приклад зображення&quot; style=&quot;width: 60%;&quot;>')">HTML-код зображення</button>
+                    </li>
+                </ul>
                 <button onclick="showContent('<strong>Висновки:</strong> <br> Підсумовуючи, лабораторна робота допомогла краще зрозуміти основні принципи верстки HTML-сторінок.')">Висновки</button>
             </div>
     
