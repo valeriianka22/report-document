@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Звіти з лабораторних робіт</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        // Функція для показу контенту
+        function showContent(content) {
+            document.getElementById('output').innerHTML = content;
+        }
+    </script>
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <h1>ЗВІТИ З ЛАБОРАТОРНИХ РОБІТ</h1>
+            <h2>З ДИСЦИПЛІНИ "ІНТЕРНЕТ-ТЕХНОЛОГІЇ ТА ПРОЕКТУВАННЯ WEB-ЗАСТОСУВАНЬ"</h2>
+            <p>Студентки групи ІС-32 Ковалюк Валерії Юріївни</p>
+            <img src="image/photo.JPG" alt="Фото студента" class="photo">
+        </div>
+    </header>
+
+    <main>
+        <div class="top-buttons">
+            <a href="index.html">Лабораторна робота №1</a>
+            <a href="lab2.html">Лабораторна робота №2</a>
+            <a href="lab3.html">Лабораторна робота №3</a>
+            <a href="lab4.html">Лабораторна робота №4</a>
+            <a href="lab5.html">Лабораторна робота №5</a>
+            <a href="lab6.html">Лабораторна робота №6</a>
+            <a href="lab7.html">Лабораторна робота №7</a>
+            <a href="lab8.html">Лабораторна робота №8</a>
+            <a href="lab9.html">Лабораторна робота №9</a>
+        </div>
+    
+        <div class="container">
+            <div class="sidebar">
+                <!-- Кнопки сайдбару для виведення різної інформації -->
+                <button onclick="showContent('<strong>Тема:</strong> <br> АДАПТИВНА ВЕРСТКА. МЕДІА-ЗАПИТИ. МЕТАТЕГ VIEWPORT. СТРАТЕГІЯ MOBILE FIRST. <br><br> <strong>Мета:</strong> <br> Адаптивна верстка. Медіа-запити. Медіа-типи. Медіа-функції.Метатег viewport. Інструменти розробника. Стратегія Mobile First. <br><br> <strong>Місце розташування:</strong> <ul><li><a href=&quot;https://github.com/valeriianka22/IS-32_DanceStudio_Kovaliuk_2&quot;>репозиторій сайту</a></li><li><a href=&quot;https://valeriianka22.github.io/IS-32_DanceStudio_Kovaliuk_2/&quot;>сайт</a></li><li><a href=&quot;https://github.com/valeriianka22/report-document&quot;>репозиторій звіту</a></li><li><a href=&quot;https://valeriianka22.github.io/report-document/&quot;>звіт</a></li></ul>')">Тема Мета Місце розташування ЛР №4</button>
+                <button onclick="showContent('')">Адаптивна верстка для:</button>
+                <ul class="list-butt">
+                    <li>
+                        <button onclick="showContent('<a href=lab3-ex3.html>Переглянути сторінку</a> <br><br> <img src=&quot;image/lab3-ex3-1.png&quot; alt=&quot;Приклад зображення&quot; style=&quot;width: 80%;&quot;> <br> <img src=&quot;image/lab3-ex3-2.png&quot; alt=&quot;Приклад зображення&quot; style=&quot;width: 80%;&quot;>')">ДЕСКТОПНОЇ ВЕРСІЇ</button>
+                    </li>
+                    <li>
+                        <button onclick="showContent('<img src=&quot;image/lab3-ex3-3.png&quot; alt=&quot;Приклад зображення&quot; style=&quot;width: 50%;&quot;> <br> <img src=&quot;image/lab3-ex3-4.png&quot; alt=&quot;Приклад зображення&quot; style=&quot;width: 50%;&quot;> <br> <img src=&quot;image/lab3-ex3-5.png&quot; alt=&quot;Приклад зображення&quot; style=&quot;width: 50%;&quot;>')">ПЛАНШЕТНОЇ ВЕРСІЇ</button>
+                    </li>
+                    <li>
+                        <button onclick="showContent('<img src=&quot;image/lab3-ex3-6.png&quot; alt=&quot;Приклад зображення&quot; style=&quot;width: 20%;&quot;> <img src=&quot;image/lab3-ex3-7.png&quot; alt=&quot;Приклад зображення&quot; style=&quot;width: 20%;&quot;> <img src=&quot;image/lab3-ex3-8.png&quot; alt=&quot;Приклад зображення&quot; style=&quot;width: 20%;&quot;>')">МОБІЛЬНОЇ ВЕРСІЇ</button>
+                    </li>
+                </ul>
+                <button onclick="showContent('<strong>Висновки:</strong> <br> У ході лабораторної роботи було успішно розроблено адаптивний веб-інтерфейс, який коректно відображається на пристроях з різними розмірами екранів, таких як десктопи, планшети та мобільні телефони. Для досягнення цього було застосовано принципи адаптивної верстки, зокрема використано медіа-запити, що дозволяють змінювати вигляд елементів сторінки залежно від ширини екрана. <br> Крім того, було розроблено логічну структуру макета із застосуванням сучасних технологій CSS, таких як flexbox для розміщення елементів і адаптивна типографія для забезпечення читабельності на малих екранах. Також реалізовано адаптивні зображення та кнопки, що зберігають свою функціональність і зручність використання на будь-якому пристрої.</li></ul>')">Висновки</button>
+            </div>
+    
+            <div class="main-content">
+                <!-- Область для виведення інформації -->
+                <div id="output" class="output">
+                    Місце виведення інформації
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer></footer>
+
+</body>
+</html>
