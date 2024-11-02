@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Droid Transaction</title>
+</head>
+<body>
+    <h1>Droid Repair Station</h1>
+    <p>Enter the quantity of droids and the price per droid:</p>
+
+    <!-- Поля для введення кількості та ціни дроїда -->
+    <label for="quantityInput">Quantity:</label>
+    <input type="number" id="quantityInput" placeholder="Enter quantity">
+
+    <label for="priceInput">Price per Droid:</label>
+    <input type="number" id="priceInput" placeholder="Enter price per droid">
+
+    <button onclick="calculateTransaction()">Calculate Total Price</button>
+
+    <!-- Виведення результату -->
+    <p id="result"></p>
+
+    <script>
+        // Функція для обчислення вартості замовлення
+        function makeTransaction(quantity, pricePerDroid) {
+            const totalPrice = quantity * pricePerDroid;
+            return `You ordered ${quantity} droids worth ${totalPrice} credits!`;
+        }
+
+        // Функція для обробки введених даних і виклику makeTransaction
+        function calculateTransaction() {
+            const quantity = parseInt(document.getElementById('quantityInput').value); // Отримуємо кількість дроїдів
+            const pricePerDroid = parseInt(document.getElementById('priceInput').value); // Отримуємо ціну за дроїд
+            const resultElement = document.getElementById('result'); // Отримуємо елемент для виведення результату
+
+            // Перевірка на заповнення всіх полів
+            if (isNaN(quantity) || isNaN(pricePerDroid)) {
+                resultElement.textContent = "Please enter valid numbers for both fields.";
+                return;
+            }
+
+            // Виклик функції та виведення результату
+            const resultMessage = makeTransaction(quantity, pricePerDroid);
+            resultElement.textContent = resultMessage;
+        }
+    </script>
+</body>
+</html>
