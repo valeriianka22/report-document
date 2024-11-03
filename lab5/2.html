@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checking Spam</title>
+</head>
+<body> 
+    <script>
+        function checkForSpam(message) {
+            const normalizedMessage = message.toLowerCase(); // нижній регістр
+            return normalizedMessage.includes("spam") || normalizedMessage.includes("sale"); 
+        }
+
+        console.log(checkForSpam("Latest technology news")); 
+        console.log(checkForSpam("Get the best sALE offers now!")); 
+        console.log(checkForSpam("SPaM messages are annoying")); 
+        console.log(checkForSpam("Enjoy your day without any problems")); 
+    </script>
+</body>
+</html>

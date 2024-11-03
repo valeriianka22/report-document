@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checking Spam</title>
+</head>
+<body> 
+    <script>
+        function filterArray(numbers, value) {
+            const filteredNumbers = []; // Створюємо порожній масив для збереження підходящих чисел
+
+            for (let i = 0; i < numbers.length; i++) { // Ітеруємо кожен елемент масиву numbers
+                if (numbers[i] > value) { // Перевіряємо, чи елемент більше заданого значення
+                    filteredNumbers.push(numbers[i]); // Додаємо елемент до нового масиву, якщо умова виконується
+                }
+            }
+
+            return filteredNumbers; // Повертаємо новий масив з підходящими числами
+        }
+
+        console.log(filterArray([1, 5, 10, 15, 20], 10)); // Виведе: [15, 20]
+        console.log(filterArray([2, 8, 3, 11, 7], 5)); // Виведе: [8, 11, 7]
+        console.log(filterArray([12, 4, 8, 21, 5], 15)); // Виведе: [21]
+    </script>
+</body>
+</html>
