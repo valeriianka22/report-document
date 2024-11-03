@@ -3,25 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Checking Spam</title>
+    <title>Filter the array</title>
 </head>
 <body> 
     <script>
         function filterArray(numbers, value) {
-            const filteredNumbers = []; // Створюємо порожній масив для збереження підходящих чисел
+            const filteredNumbers = []; // порожній масив для підходящих чисел
 
-            for (let i = 0; i < numbers.length; i++) { // Ітеруємо кожен елемент масиву numbers
-                if (numbers[i] > value) { // Перевіряємо, чи елемент більше заданого значення
-                    filteredNumbers.push(numbers[i]); // Додаємо елемент до нового масиву, якщо умова виконується
+            for (let i = 0; i < numbers.length; i++) { 
+                if (numbers[i] > value) { 
+                    filteredNumbers.push(numbers[i]); 
                 }
             }
 
-            return filteredNumbers; // Повертаємо новий масив з підходящими числами
+            return filteredNumbers; 
         }
 
-        console.log(filterArray([1, 5, 10, 15, 20], 10)); // Виведе: [15, 20]
-        console.log(filterArray([2, 8, 3, 11, 7], 5)); // Виведе: [8, 11, 7]
-        console.log(filterArray([12, 4, 8, 21, 5], 15)); // Виведе: [21]
+        console.log(filterArray([1, 5, 10, 15, 20], 10)); 
+        console.log(filterArray([2, 8, 3, 11, 7], 5)); 
+        console.log(filterArray([12, 4, 8, 21, 5], 15)); 
     </script>
 </body>
 </html>

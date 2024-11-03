@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checking Spam</title>
+</head>
+<body>
+    <input type="text" id="textInput" placeholder="Почніть вводити текст..." />
+    <div id="suggestions"></div>
+
+    <script>
+        // слова-підказки
+        const hints = ["apple", "banana", "apricot", "orange", "grape", "watermelon", "kiwi", "pear", "plum", "peach"];
+
+        const inputField = document.getElementById("textInput");
+        const suggestionsContainer = document.getElementById("suggestions");
+
+        function showSuggestions() {
+            
+            suggestionsContainer.innerHTML = "";
+
+            const query = inputField.value.toLowerCase();
+
+            const filteredHints = hints.filter(hint => hint.toLowerCase().includes(query));
+
+            filteredHints.forEach(hint => {
+                const suggestionItem = document.createElement("div");
+                suggestionItem.textContent = hint;
+                
+                suggestionItem.addEventListener("click", () => {
+                    inputField.value = hint;
+                    suggestionsContainer.innerHTML = ""; 
+                });
+
+                suggestionsContainer.appendChild(suggestionItem);
+            });
+        }
+
+        inputField.addEventListener("input", showSuggestions);
+    </script>
+</body>
+</html>
