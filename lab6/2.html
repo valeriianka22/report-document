@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function getProductDetails(productId, successCallback, errorCallback) {
+            const products = {
+                1: { name: "Огірок", price: 100 },
+                2: { name: "Помідор", price: 200 },
+                3: { name: "Капуста", price: 300 }
+            };
+
+            if (products[productId]) {
+                successCallback(products[productId]);
+            } else {
+                errorCallback("Product not found.");
+            }
+        }
+
+        getProductDetails(
+        2,
+        (product) => console.log("Product found:", product),
+        (error) => console.error("Error:", error)
+        );
+        getProductDetails(
+        4,
+        (product) => console.log("Product found:", product),
+        (error) => console.error("Error:", error)
+        );
+    </script>
+</body>
+</html>
