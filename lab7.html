@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Звіти з лабораторних робіт</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        // Функція для показу контенту
+        function showContent(content) {
+            document.getElementById('output').innerHTML = content;
+        }
+    </script>
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <h1>ЗВІТИ З ЛАБОРАТОРНИХ РОБІТ</h1>
+            <h2>З ДИСЦИПЛІНИ "ІНТЕРНЕТ-ТЕХНОЛОГІЇ ТА ПРОЕКТУВАННЯ WEB-ЗАСТОСУВАНЬ"</h2>
+            <p>Студентки групи ІС-32 Ковалюк Валерії Юріївни</p>
+            <img src="image/photo.JPG" alt="Фото студента" class="photo">
+        </div>
+    </header>
+
+    <main>
+        <div class="top-buttons">
+            <a href="index.html">Лабораторна робота №1</a>
+            <a href="lab2.html">Лабораторна робота №2</a>
+            <a href="lab3.html">Лабораторна робота №3</a>
+            <a href="lab4.html">Лабораторна робота №4</a>
+            <a href="lab5.html">Лабораторна робота №5</a>
+            <a href="lab6.html">Лабораторна робота №6</a>
+            <a href="lab7.html">Лабораторна робота №7</a>
+            <a href="lab8.html">Лабораторна робота №8</a>
+            <a href="lab9.html">Лабораторна робота №9</a>
+        </div>
+    
+        <div class="container">
+            <div class="sidebar">
+                <!-- Кнопки сайдбару для виведення різної інформації -->
+                <button onclick="showContent('<strong>Тема:</strong> <br> КЛАСИ. ОБ\'ЄКТНА МОДЕЛЬ ДОКУМЕНТА (DOM). ПОДІЇ. ОБ\'ЄКТ ПОДІЇ. ДЕЛЕГУВАННЯ ПОДІЙ. <br><br> <strong>Мета:</strong> <br> придбати практичні навички роботи з об\'єктами. Методи об\'єкта. Callback. Стрілочні функції. Стрілочні функції як колбеки. Реалізація програм засовами мови JAVASCRIPT. <br><br> <strong>Місце розташування:</strong> <ul><li><a href=&quot;https://github.com/valeriianka22/IS-32_DanceStudio_Kovaliuk_2&quot;>репозиторій сайту</a></li><li><a href=&quot;https://valeriianka22.github.io/IS-32_DanceStudio_Kovaliuk_2/&quot;>сайт</a></li><li><a href=&quot;https://github.com/valeriianka22/report-document&quot;>репозиторій звіту</a></li><li><a href=&quot;https://valeriianka22.github.io/report-document/&quot;>звіт</a></li></ul>')">Тема Мета Місце розташування звіту, сайту</button>
+                <button onclick="showContent('<a href=lab7/1.html>Перейти на сторінку</a> <br> <img src=&quot;image/621.png&quot; alt=&quot;Приклад зображення&quot; style=&quot;width: 60%;&quot;> <br> <img src=&quot;image/622.png&quot; alt=&quot;Приклад зображення&quot; style=&quot;width: 50%;&quot;>')">ЗАВДАННЯ №1</button>
+                <button onclick="showContent('<a href=lab7/3.html>Перейти на сторінку</a> <br> <img src=&quot;image/641.png&quot; alt=&quot;Приклад зображення&quot; style=&quot;width: 60%;&quot;> <br> <img src=&quot;image/642.png&quot; alt=&quot;Приклад зображення&quot; style=&quot;width: 30%;&quot;>')">ЗАВДАННЯ №3</button>
+                <button onclick="showContent('<a href=lab7/5.html>Перейти на сторінку</a> <br> <img src=&quot;image/661.png&quot; alt=&quot;Приклад зображення&quot; style=&quot;width: 60%;&quot;> <br> <img src=&quot;image/662.png&quot; alt=&quot;Приклад зображення&quot; style=&quot;width: 50%;&quot;>')">ЗАВДАННЯ №5</button>
+                <button onclick="showContent('<a href=lab7/7.html>Перейти на сторінку</a> <br> <img src=&quot;image/681.png&quot; alt=&quot;Приклад зображення&quot; style=&quot;width: 50%;&quot;> <br> <img src=&quot;image/682.png&quot; alt=&quot;Приклад зображення&quot; style=&quot;width: 50%;&quot;>')">ЗАВДАННЯ №7</button>
+                <button onclick="showContent('<a href=lab7/8.html>Перейти на сторінку</a> <br> <img src=&quot;image/691.png&quot; alt=&quot;Приклад зображення&quot; style=&quot;width: 60%;&quot;> <br> <img src=&quot;image/692.png&quot; alt=&quot;Приклад зображення&quot; style=&quot;width: 50%;&quot;>')">ЗАВДАННЯ №8</button>
+                <button onclick="showContent('<a href=lab7/9.html>Перейти на сторінку</a> <br> <img src=&quot;image/601.png&quot; alt=&quot;Приклад зображення&quot; style=&quot;width: 50%;&quot;> <br> <img src=&quot;image/602.png&quot; alt=&quot;Приклад зображення&quot; style=&quot;width: 10%;&quot;>')">ЗАВДАННЯ №9</button>
+                <button onclick="showContent('<a href=lab7/10.html>Перейти на сторінку</a> <br> <img src=&quot;image/601.png&quot; alt=&quot;Приклад зображення&quot; style=&quot;width: 50%;&quot;> <br> <img src=&quot;image/602.png&quot; alt=&quot;Приклад зображення&quot; style=&quot;width: 10%;&quot;>')">ЗАВДАННЯ №10</button>
+                <button onclick="showContent('<strong>Висновки:</strong> <br> ')">Висновки</button>
+            </div>
+    
+            <div class="main-content">
+                <!-- Область для виведення інформації -->
+                <div id="output" class="output">
+                    Місце виведення інформації
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer></footer>
+
+</body>
+</html>
