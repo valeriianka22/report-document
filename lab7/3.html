@@ -3,11 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ЗАВДАННЯ №3</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    <h1>ЗАВДАННЯ №3</h1>
+    <input id="inpt" type="text">
+    <button id="btn">Приховати</button>
+
     <script>
-        
+        let clickBtn = document.getElementById('btn');
+        let giveInpt = document.getElementById('inpt');
+
+        let ChangeFu = function(){
+            if (giveInpt.type === 'text'){
+                giveInpt.type = 'password';
+                clickBtn.innerText = 'Розкрити';
+            }
+            else{
+                giveInpt.type = 'text';
+                clickBtn.innerText = 'Приховати';
+            }
+        }
+
+        clickBtn.addEventListener('click', ChangeFu)
     </script>
 </body>
 </html>

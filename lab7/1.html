@@ -3,11 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ЗАВДАННЯ №1</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    <h1>ЗАВДАННЯ №1</h1>
+    <button id="but">SHOW ME</button>
+    <input id="text" type="login">
+
     <script>
-        
+        const but = document.querySelector('#but');
+        const inpt = document.querySelector('#text');
+        but.addEventListener('click', () => console.log(inpt.value))
     </script>
 </body>
 </html>

@@ -3,11 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ЗАВДАННЯ №7</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    <h1>ЗАВДАННЯ №7</h1>
+    <ul id="categories">
+        <li class="item">
+          <h2>Animals</h2>
+          <ul>
+            <li>Cat</li>
+            <li>Hamster</li>
+            <li>Horse</li>
+            <li>Parrot</li>
+          </ul>
+        </li>
+        <li class="item">
+          <h2>Products</h2>
+          <ul>
+            <li>Bread</li>
+            <li>Prasley</li>
+            <li>Cheese</li>
+          </ul>
+        </li>
+        <li class="item">
+          <h2>Technologies</h2>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Node.js</li>
+          </ul>
+        </li>
+    </ul>
+      
     <script>
-        
+        const categories = document.querySelectorAll('#categories > .item');
+        console.log(`Number of categories: ${categories.length}`);
+
+        categories.forEach(category => {
+            const categoryTitle = category.querySelector('h2');
+            const categoryItems = category.querySelectorAll('ul > li');
+            console.log(`Category: ${categoryTitle.innerText}`);
+            console.log(`Elements: ${categoryItems.length}`);
+        });
     </script>
 </body>
 </html>
