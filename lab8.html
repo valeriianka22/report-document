@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Звіти з лабораторних робіт</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        // Функція для показу контенту
+        function showContent(content) {
+            document.getElementById('output').innerHTML = content;
+        }
+    </script>
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <h1>ЗВІТИ З ЛАБОРАТОРНИХ РОБІТ</h1>
+            <h2>З ДИСЦИПЛІНИ "ІНТЕРНЕТ-ТЕХНОЛОГІЇ ТА ПРОЕКТУВАННЯ WEB-ЗАСТОСУВАНЬ"</h2>
+            <p>Студентки групи ІС-32 Ковалюк Валерії Юріївни</p>
+            <img src="image/photo.JPG" alt="Фото студента" class="photo">
+        </div>
+    </header>
+
+    <main>
+        <div class="top-buttons">
+            <a href="index.html">Лабораторна робота №1</a>
+            <a href="lab2.html">Лабораторна робота №2</a>
+            <a href="lab3.html">Лабораторна робота №3</a>
+            <a href="lab4.html">Лабораторна робота №4</a>
+            <a href="lab5.html">Лабораторна робота №5</a>
+            <a href="lab6.html">Лабораторна робота №6</a>
+            <a href="lab7.html">Лабораторна робота №7</a>
+            <a href="lab8.html">Лабораторна робота №8</a>
+            <a href="lab9.html">Лабораторна робота №9</a>
+        </div>
+    
+        <div class="container">
+            <div class="sidebar">
+                <!-- Кнопки сайдбару для виведення різної інформації -->
+                <button onclick="showContent('<strong>Тема:</strong> <br> WEB-СХОВИЩЕ. WEB STORAGE API. МОДУЛЬНОСТЬ  КОДУ. СТВОРЕННЯ МОДАЛЬНОГО ВІКНА. ДЕЛЕГУВАННЯ ПОДІЙ. <br><br> <strong>Мета:</strong> <br> придбати практичні навички роботи створення модального вікна; повторити процес створення макету, зокрема створення макету галереї довільних зображень; закріпити навички роботи з делегуванням подій. <br><br> <strong>Місце розташування:</strong> <ul><li><a href=&quot;https://github.com/valeriianka22/lab-8-gallery-form&quot;>репозиторій ЛР №8</a></li><li><a href=&quot;https://valeriianka22.github.io/lab-8-gallery-form/&quot;>жива сторінка ЛР №8</a></li><li><a href=&quot;https://github.com/valeriianka22/report-document&quot;>репозиторій звіту</a></li><li><a href=&quot;https://valeriianka22.github.io/report-document/&quot;>звіт</a></li></ul>')">Тема Мета Місце розташування</button>
+                <button onclick="showContent('')">ЗАВДАННЯ №1 GALLERY</button>
+                <ul class="list-butt">
+                    <li>
+                        <button onclick="showContent('<img src=&quot;image/811.png&quot; alt=&quot;Приклад зображення&quot; style=&quot;width: 60%;&quot;> <br> <img src=&quot;image/812.png&quot; alt=&quot;Приклад зображення&quot; style=&quot;width: 30%;&quot;>')">HTML, CSS</button>
+                    </li>
+                    <li>
+                        <button onclick="showContent('<img src=&quot;image/813.png&quot; alt=&quot;Приклад зображення&quot; style=&quot;width: 40%;&quot;> <br> <img src=&quot;image/814.png&quot; alt=&quot;Приклад зображення&quot; style=&quot;width: 60%;&quot;>')">JS</button>
+                    </li>
+                    <li>
+                        <button onclick="showContent('<a href=https://valeriianka22.github.io/lab-8-gallery-form/index1.html>Переглянути галерею світлин</a> <br><br> <img src=&quot;image/815.png&quot; alt=&quot;Приклад зображення&quot; style=&quot;width: 80%;&quot;> <br> <img src=&quot;image/816.png&quot; alt=&quot;Приклад зображення&quot; style=&quot;width: 80%;&quot;>')">Виконання</button>
+                    </li>
+                </ul>
+                <button onclick="showContent('')">ЗАВДАННЯ №2 FORM</button>
+                <ul class="list-butt">
+                    <li>
+                        <button onclick="showContent('<img src=&quot;image/821.png&quot; alt=&quot;Приклад зображення&quot; style=&quot;width: 60%;&quot;> <br> <img src=&quot;image/822.png&quot; alt=&quot;Приклад зображення&quot; style=&quot;width: 30%;&quot;>')">HTML, CSS</button>
+                    </li>
+                    <li>
+                        <button onclick="showContent('<img src=&quot;image/823.png&quot; alt=&quot;Приклад зображення&quot; style=&quot;width: 50%;&quot;>')">JS</button>
+                    </li>
+                    <li>
+                        <button onclick="showContent('<a href=https://valeriianka22.github.io/lab-8-gallery-form/2-form.html>Переглянути форму з Local Storage</a> <br><br> Перевіряємо збереження даних в Local Storage після оновлення сторінки <br> <img src=&quot;image/824.png&quot; alt=&quot;Приклад зображення&quot; style=&quot;width: 80%;&quot;> <br> Перевіряємо виведення в консоль об\'єкту з введених даних <br> <img src=&quot;image/825.png&quot; alt=&quot;Приклад зображення&quot; style=&quot;width: 80%;&quot;> <br> Перевіряємо виведення помилки, коли не всі поля заповнені <br> <img src=&quot;image/826.png&quot; alt=&quot;Приклад зображення&quot; style=&quot;width: 80%;&quot;>')">Виконання</button>
+                    </li>
+                </ul>
+                <button onclick="showContent('<strong>Висновки:</strong> <br> У цій лабораторній роботі було реалізовано інтерактивну галерею зображень із використанням динамічної розмітки, делегування подій та підключенням модального вікна через бібліотеку basicLightbox, а також форму зберігання введених даних у локальному сховищі з перевіркою коректності заповнення полів. Завдання дозволило закріпити навички роботи з DOM, подіями, локальним сховищем та сторонніми бібліотеками, що є важливими аспектами фронтенд-розробки.')">Висновки</button>
+            </div>
+    
+            <div class="main-content">
+                <!-- Область для виведення інформації -->
+                <div id="output" class="output">
+                    Місце виведення інформації
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer></footer>
+
+</body>
+</html>
